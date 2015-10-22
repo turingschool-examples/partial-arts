@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h1>Welcome to PartialArts</h1>
+</div>
+
+<a href="/artists">All Artists</a> <br>
+<a href="/belts">Artists by Belt Color</a> <br>
+<a href="/categories">Artists by Category</a> <br>
+
+<div class="belt-statistics">
+  <h3>Belt Stats</h3>
+  <% @belt_statistics.each do |belt, count| %>
+    <p><%= count %> artists have earned the <%= belt.color %> belt.</p>
+  <% end %>
+</div>
+
+<div class="category-statistics">
+  <h3>Category Stats</h3>
+  <% @category_statistics.each do |category, count| %>
+    <p><%= count %> artists practice <%= category.name %>. </p>
+  <% end %>
+</div>

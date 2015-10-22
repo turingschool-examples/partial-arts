@@ -1,0 +1,56 @@
+
+.artist {
+  border: 4px solid black;
+  display: inline-block;
+  background-color: #EEEEEE;
+  margin: 1em;
+  padding: 1em;
+  width: 240px;
+  height: 250px;
+  float: left;
+  border-radius: 5px;
+}
+
+.belt-yellow {
+  background-color: yellow;
+}
+
+.belt-indigo {
+  background-color: indigo;
+}
+
+.belt-grey {
+  background-color: grey;
+}
+
+.belt-purple {
+  background-color: purple;
+}
+
+.belt-azure {
+  background-color: azure;
+}
+
+.belt-plum {
+  background-color: plum;
+}
+
+.belt-olive {
+  background-color: olive;
+}
+
+.belt-turquoise {
+  background-color: turquoise;
+}
+
+.belt-white {
+  background-color: white;
+}
+
+.belt-gold {
+  background-color: gold;
+}
+
+.clearfix {
+  overflow: auto;
+}
