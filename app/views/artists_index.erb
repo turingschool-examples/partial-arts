@@ -3,9 +3,5 @@
 </div>
 
 <% @artists.each do |artist| %>
-  <div class="artist">
-    <img src="<%= artist.image_url %>" alt=""> <br>
-    <h3><%= artist.first_name %> <%= artist.last_name %></h3>
-    <p>Hometown: <%= artist.location %></p>
-  </div>
+  <%= erb :_artist, locals: { artist: artist } %>
 <% end %>
