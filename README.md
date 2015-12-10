@@ -2,6 +2,7 @@
 
 ### Exploring the App
 
+* Take a look at the schema file. Describe the relationship(s) between belts, artists, and categories. 
 * Fire up the server and take a look at '/', '/artists', '/belts', '/categories', '/artist/:id'
 * What parts of the views seem to be repeated? 
 * Take a look at the code. Do you see repeated code in the views? 
