@@ -16,6 +16,15 @@
 <div class="category-statistics">
   <h3>Category Stats</h3>
   <% @category_statistics.each do |category, count| %>
-    <p><%= count %> artists practice <%= category.name %>. </p>
+    <p>
+      <%= count %> artists practice <a href="http://wikipedia.org/wiki/<%= category.name %>"><%= category.name %></a>
+    </p>
+  <% end %>
+</div>
+
+<div class="hometown-statistics">
+  <h3>Hometown Stats</h3>
+  <% @location_statistics.each do |location, count| %>
+    <p><%= count %> artists are from <a href="http://wikipedia.org/wiki/<%= location %>"><%= location %></a></p>
   <% end %>
 </div>

@@ -6,33 +6,37 @@
   margin: 1em;
   padding: 1em;
   width: 240px;
-  height: 250px;
+  height: 140px;
   float: left;
   border-radius: 5px;
 }
 
-.belt-yellow {
-  background-color: yellow;
+.belt-teal {
+  background-color: teal;
 }
 
-.belt-indigo {
-  background-color: indigo;
+.belt-blue {
+  background-color: blue;
 }
 
-.belt-grey {
-  background-color: grey;
+.belt-maroon {
+  background-color: maroon;
 }
 
-.belt-purple {
-  background-color: purple;
+.belt-lime {
+  background-color: lime;
+}
+
+.belt-black {
+  background-color: black;
 }
 
 .belt-azure {
   background-color: azure;
 }
 
-.belt-plum {
-  background-color: plum;
+.belt-pink {
+  background-color: pink;
 }
 
 .belt-olive {
@@ -43,12 +47,12 @@
   background-color: turquoise;
 }
 
-.belt-white {
-  background-color: white;
+.belt-orange {
+  background-color: orange;
 }
 
-.belt-gold {
-  background-color: gold;
+.belt-mint {
+  background-color: green;
 }
 
 .clearfix {
