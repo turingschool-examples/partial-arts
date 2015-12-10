@@ -9,7 +9,9 @@
 <div class="belt-statistics">
   <h3>Belt Stats</h3>
   <% @belt_statistics.each do |belt, count| %>
-    <p><%= belt.color.capitalize %> belt: <%= count %> artists</p>
+    <p>
+      <%= belt.color.capitalize %> belt: <%= count %> artists
+    </p>
   <% end %>
 </div>
 
@@ -25,6 +27,8 @@
 <div class="hometown-statistics">
   <h3>Hometown Stats</h3>
   <% @location_statistics.each do |location, count| %>
-    <p><a href="http://wikipedia.org/wiki/<%= location %>"><%= location %></a>: <%= count %> artists</p>
+    <p>
+      <a href="http://wikipedia.org/wiki/<%= location %>"><%= location %></a>: <%= count %> artists
+    </p>
   <% end %>
 </div>
