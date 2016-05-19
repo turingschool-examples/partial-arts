@@ -2,33 +2,28 @@
   <h1>Welcome to PartialArts</h1>
 </div>
 
-<a href="/artists">All Artists</a> <br>
-<a href="/belts">Artists by Belt Color</a> <br>
+<%= artists_url %> <br>
+<%= link_to("Artists by Belt Color", "/belts") %> <br>
+<!-- <a href="/belts">Artists by Belt Color</a> <br> -->
 <a href="/categories">Artists by Category</a> <br>
 
 <div class="belt-statistics">
   <h3>Belt Stats</h3>
   <% @belt_statistics.each do |belt, count| %>
-    <p>
-      <%= belt.color.capitalize %> belt: <%= count %> artists
-    </p>
+    <%= erb :_belt_statistics, locals: { belt: belt, count: count} %>
   <% end %>
 </div>
 
 <div class="category-statistics">
   <h3>Category Stats</h3>
   <% @category_statistics.each do |category, count| %>
-    <p>
-      <a href="http://wikipedia.org/wiki/<%= category.name %>"><%= category.name %></a>: <%= count %> artists
-    </p>
+    <%= erb :'shared/_statistics', locals: {object: category.name, count: count } %>
   <% end %>
 </div>
 
 <div class="hometown-statistics">
   <h3>Hometown Stats</h3>
   <% @location_statistics.each do |location, count| %>
-    <p>
-      <a href="http://wikipedia.org/wiki/<%= location %>"><%= location %></a>: <%= count %> artists
-    </p>
+    <%= erb :'shared/_statistics', locals: {object: location, count: count } %>
   <% end %>
 </div>

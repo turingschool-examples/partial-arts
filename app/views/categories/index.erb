@@ -1,3 +1,5 @@
+<%= root_url%>
+
 <div class="jumbotron">
   <h1>Categories</h1>
 </div>
@@ -6,10 +8,7 @@
   <h2><%= category.name %></h2>
   <div class="clearfix">
     <% category.artists.each do |artist| %>
-      <div class="artist">
-        <img src="<%= artist.image_url %>" alt=""> <br>
-        <h3><a href="/artists/<%= artist.id %>"><%= artist.first_name %> <%= artist.last_name %></a></h3>
-      </div>
+    <%= erb :'/shared/_artist', locals: { artist: artist } %>
     <% end %>
   </div>
 <% end %>
